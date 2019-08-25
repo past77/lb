@@ -29,7 +29,6 @@ char		*ft_strndup(const char *str, size_t i)
 	return (str1);
 }
 
-
 t_struc		*ft_separete_str(t_struc *form, char *str)
 {
 	if (form->press >= 0 && str != '\0')

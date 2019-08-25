@@ -72,16 +72,17 @@ void				ft_putendl_fd(char const *s, int fd);
 size_t				len_of_world(char const *s, char c, size_t i);
 size_t				count_world(char	const *str, char c);
 size_t				len_of_nbr(int nb);
-int					sort(int sort, int size);
+int					sort(int *sort, int size);
 void				ft_swap(int *a, int *b);
 int					ft_sqrt(int nb);
-char				ft_strrev(char *str);
+char				*ft_strrev(char *str);
 
 typedef struct		s_list
 {
 	void			*content;
 	size_t			content_size;
 	struct s_list	*next;
+	struct s_list	*prev;
 }					t_list;
 
 t_list				*ft_lstnew(void const *content, size_t content_size);

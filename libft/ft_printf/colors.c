@@ -46,7 +46,7 @@ void		parse_standr_color(const char *format, t_struc *form)
 	}
 	else if (!ft_strncmp(format + form->i, "{yellow}", 8))
 	{
-		ft_putstr("\x1B[33m\0");
+		ft_putstr("\x1B[33;1m\0");
 		form->i += 8;
 	}
 	else if (!ft_strncmp(format + form->i, "{red}", 5))
@@ -66,25 +66,25 @@ void		parse_standr_color(const char *format, t_struc *form)
 
 void		parse_brackets(const char *format, t_struc *form)
 {
-	if (!ft_strncmp(format + form->i, "{n}", 5))
+	if (!ft_strncmp(format + form->i, "{n}", 3))
 	{
 		ft_putstr("\x1B[0m\0");
-		form->i += 5;
+		form->i += 3;
 		return ;
 	}
 	else if (!ft_strncmp(format + form->i, "{blue}", 6))
 	{
-		ft_putstr("\x1B[34m\0");
+		ft_putstr("\x1b[34;1m\0");
 		form->i += 6;
 	}
 	else if (!ft_strncmp(format + form->i, "{magenta}", 9))
 	{
-		ft_putstr("\x1B[35m\0");
+		ft_putstr("\x1B[35;4m\0");
 		form->i += 9;
 	}
 	else if (!ft_strncmp(format + form->i, "{cyan}", 6))
 	{
-		ft_putstr("\x1B[36m\0");
+		ft_putstr("\x1B[36;1m\0");
 		form->i += 6;
 	}
 	else

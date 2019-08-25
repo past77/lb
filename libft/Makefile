@@ -16,16 +16,16 @@ FLAGS = -Wall -Wextra -Werror
 INC = -I includes/
 CC = @gcc
 
-SRC = 	ft_strcmp.c ft_strlen.c	ft_strdup.c	ft_strcpy.c ft_strncpy.c ft_strcat.c \
-		ft_strncat.c ft_strlcat.c ft_memcpy.c	ft_strchr.c ft_strrchr.c ft_strstr.c \
-		ft_memccpy.c ft_strncmp.c ft_memset.c ft_bzero.c ft_memchr.c ft_atoi.c ft_isalpha.c \
-		ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c \
-		ft_memalloc.c ft_memmove.c ft_strnstr.c ft_memdel.c ft_strnew.c ft_strdel.c \
-		ft_strclr.c ft_striter.c ft_striteri.c ft_strmap.c ft_strmapi.c ft_strequ.c \
-		ft_strequ.c ft_strnequ.c ft_strsub.c ft_strjoin.c ft_strtrim.c ft_itoa.c \
-		ft_putchar.c ft_putchar_fd.c ft_putstr.c ft_putendl.c ft_putstr_fd.c ft_putnbr.c \
-		ft_putnbr_fd.c ft_putendl_fd.c ft_strsplit.c ft_memcmp.c count_world.c len_of_world.c \
-		len_of_nbr.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c \
+SRC = 	fstr/ft_strcmp.c fstr/ft_strlen.c fstr/ft_strdup.c fstr/ft_strcpy.c fstr/ft_strncpy.c fstr/ft_strcat.c \
+		fstr/ft_strncat.c fstr/ft_strlcat.c fmem/ft_memcpy.c fstr/ft_strchr.c fstr/ft_strrchr.c fstr/ft_strstr.c \
+		fmem/ft_memccpy.c fstr/ft_strncmp.c fmem/ft_memset.c fmem/ft_bzero.c fmem/ft_memchr.c fnum/ft_atoi.c fis/ft_isalpha.c \
+		fis/ft_isdigit.c fis/ft_isalnum.c fis/ft_isascii.c fis/ft_isprint.c ft_toupper.c ft_tolower.c \
+		fmem/ft_memalloc.c fmem/ft_memmove.c fstr/ft_strnstr.c fmem/ft_memdel.c fstr/ft_strnew.c fstr/ft_strdel.c \
+		fstr/ft_strclr.c fstr/ft_striter.c fstr/ft_striteri.c fstr/ft_strmap.c fstr/ft_strmapi.c fstr/ft_strequ.c \
+		fstr/ft_strequ.c fstr/ft_strnequ.c fstr/ft_strsub.c fstr/ft_strjoin.c fstr/ft_strtrim.c fstr/ft_itoa.c \
+		fout/ft_putchar.c fout/ft_putchar_fd.c fout/ft_putstr.c fout/ft_putendl.c fnum/ft_sqrt.c fout/ft_putstr_fd.c fout/ft_putnbr.c \
+		fout/ft_putnbr_fd.c fout/ft_putendl_fd.c fstr/ft_strsplit.c fmem/ft_memcmp.c fstr/count_world.c fstr/len_of_world.c \
+		fstr/len_of_nbr.c flst/ft_lstnew.c flst/ft_lstdelone.c fnum/sort.c flst/ft_lstdel.c flst/ft_lstadd.c flst/ft_lstiter.c flst/ft_lstmap.c \
 		get_next_line.c
 
 P_SRC = ft_printf.c  pt_digit.c pt_string.c perc_and_char.c \

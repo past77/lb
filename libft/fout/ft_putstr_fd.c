@@ -1,13 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lib_fn3.c                                          :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ppolozhe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/22 16:14:48 by ppolozhe          #+#    #+#             */
-/*   Updated: 2019/01/22 16:15:04 by ppolozhe         ###   ########.fr       */
+/*   Created: 2018/11/06 13:30:57 by ppolozhe          #+#    #+#             */
+/*   Updated: 2018/11/07 12:45:52 by ppolozhe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../includes/libft.h"
+
+void	ft_putstr_fd(char const *s, int fd)
+{
+	int i;
+
+	i = 0;
+	if (!s)
+	{
+		return ;
+	}
+	while (s[i] != '\0')
+	{
+		ft_putchar_fd(s[i], fd);
+		i++;
+	}
+}
